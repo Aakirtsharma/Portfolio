@@ -21,3 +21,18 @@ function menu() {
     }
 
 }
+let animat=document.querySelectorAll(".contact_col")
+window.addEventListener("scroll",() => {
+if(scrollY >= 650){
+    animat[0].classList.add("animat");
+    animat[1].classList.add("animat");
+    animat[2].classList.add("animat");
+    animat[3].classList.add("animat");
+}
+else{
+    animat[0].classList.remove("animat");
+    animat[1].classList.remove("animat");
+    animat[2].classList.remove("animat");
+    animat[3].classList.remove("animat");
+};
+})

@@ -135,17 +135,31 @@ span::after {
   position: relative;
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  overflow: hidden;
 }
 .contact_col {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 10px 3px rgba(0, 0, 0);
   border-radius: 10px;
-  flex-basis: 22.6%;
+  flex-basis: 20%;
   height: 300px;
   min-width: 250px;
   margin: 25px;
   position: relative;
   transition: 0.5s;
+ 
+}
+.animat{
+  animation: animate 1s linear ;
+} 
+@keyframes animate {
+  0%{
+    transform: translateY(400px);opacity: 0;
+  }
+  100%
+  {
+    transform: translateY(0px);opacity: 1;
+  }
 }
 .contact_col:hover {
   transform: translateY(-15px);
@@ -265,6 +279,18 @@ span::after {
   .contact_col {
     width: 100%;
     min-width: 250px;
+  }
+  .animat{
+    animation: animate 2s linear ;
+  } 
+  @keyframes animate {
+    0%{
+      transform: translatex(-400px);opacity: 0;
+    }
+    100%
+    {
+      transform: translatex(0px);opacity: 1;
+    }
   }
 }
 
