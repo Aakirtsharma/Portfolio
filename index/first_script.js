@@ -36,3 +36,21 @@ else{
     animat[3].classList.remove("animat");
 };
 })
+let animate=document.querySelector(".third_r_c1")
+window.addEventListener("scroll",() => {
+if(scrollY >= 10){
+    animate.classList.add("animate");
+}
+else{
+    animate.classList.remove("animate");
+};
+})
+let animates=document.querySelector(".third_r_c2")
+window.addEventListener("scroll",() => {
+if(scrollY >= 300){
+    animates.classList.add("animates");
+}
+else{
+    animates.classList.remove("animates");
+};
+})
